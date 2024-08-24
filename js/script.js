@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('load', function () {
         document.body.classList.remove('hidden');
         // Añadir un retraso de 2.5 segundos (2500 milisegundos)
-        setTimeout(function() {
+        setTimeout(function () {
             // Ocultar el loader con una transición de desvanecimiento
             document.getElementById('loader').classList.add('hidden');
             // Mostrar el contenido con una transición de desvanecimiento
             document.getElementById('content').classList.add('visible');
             // Mostrar el body
-            
+
         }, 2500); // Cambia 2500 por el tiempo en milisegundos que desees
     });
 });
@@ -29,7 +29,7 @@ function makeElementDraggable(elmnt) {
         const currentTime = new Date().getTime();
         const tapLength = currentTime - lastTap;
 
-        if (tapLength < 300 && tapLength > 0) {
+        if (tapLength < 500 && tapLength > 0) {
             toggleSize(elmnt);
         } else {
             dragMouseDown(e);
@@ -61,7 +61,7 @@ function makeElementDraggable(elmnt) {
         } else {
             elmnt.style.transform = 'scale(4)';
             elmnt.style.transition = 'transform 0.3s ease';
-            elmnt.style.imageRendering = 'high-quality';
+            elmnt.style.imageRendering = 'auto';
             document.addEventListener('click', handleDocumentClick);
 
             if (infoDiv) {
@@ -81,7 +81,6 @@ function makeElementDraggable(elmnt) {
     }
 
     function dragMouseDown(e) {
-        e = e || window.event;
         e.preventDefault();
         elmnt.style.cursor = 'grabbing';
 
@@ -98,12 +97,12 @@ function makeElementDraggable(elmnt) {
 
         document.onmouseup = closeDragElement;
         document.onmousemove = elementDrag;
+        // Cambiar a un listener no pasivo para touchmove
+        document.addEventListener('touchmove', elementDrag, { passive: false });
         document.ontouchend = closeDragElement;
-        document.ontouchmove = elementDrag;
     }
 
     function elementDrag(e) {
-        e = e || window.event;
         e.preventDefault();
 
         if (e.type === 'touchmove') {
@@ -126,8 +125,8 @@ function makeElementDraggable(elmnt) {
         elmnt.style.cursor = 'grab';
         document.onmouseup = null;
         document.onmousemove = null;
+        document.removeEventListener('touchmove', elementDrag);
         document.ontouchend = null;
-        document.ontouchmove = null;
 
         const personajeDiv = document.getElementById('personaje');
         const personajeRect = personajeDiv.getBoundingClientRect();
@@ -169,77 +168,73 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const soundInfoWebstarz = new Audio('sound/sintes_starz.mp3');
 
-document.querySelector('.logo-button').addEventListener('click', function () {
+function toggleView() {
+    // Selección de elementos
     const fondo = document.querySelector('.fondo');
     const idProyectos = document.getElementById('id-proyectos');
     const logo = document.querySelector('.logo-button');
     const infoWebstarz = document.getElementById('infoWebstarz');
-    const isSmallScreenPortrait = window.matchMedia('(max-width: 500px) and (orientation: portrait)').matches;
-    
-    if (isSmallScreenPortrait) {
-        const footer = document.querySelector('footer');
-        if (footer.style.display === 'none' || footer.style.display === '') {
-            footer.style.display = 'flex';
-        } else {
-            footer.style.display = 'none';
-        }
-    }
+    const isLargeScreen = window.matchMedia('(min-width: 1920px)').matches;
+    const footer = document.querySelector('footer');
+
+    // Alternar la visibilidad del footer
+    footer.style.display = (footer.style.display === 'none' || footer.style.display === '') ? 'flex' : 'none';
+
+    // Alternar la reproducción del sonido
     if (!soundInfoWebstarz.paused) {
-        // Pausar y reiniciar el sonido si está sonando
         soundInfoWebstarz.pause();
         soundInfoWebstarz.currentTime = 0;
     } else {
-        // Reproducir el sonido si está pausado
         soundInfoWebstarz.volume = 0.1;
         soundInfoWebstarz.loop = true;
         soundInfoWebstarz.play();
     }
 
     if (fondo) {
-        logo.style.top = `${logo.offsetTop}px`; 
-        logo.style.left = `${logo.offsetLeft}px`; 
-        logo.offsetHeight; 
-        logo.style.top = ''; 
-        logo.style.left = ''; 
-        logo.style.transform = ''; 
-        logo.style.zIndex = ''; 
-        logo.style.position = ''; 
+        // Restaurar la vista original
+        logo.style.top = `${logo.offsetTop}px`;
+        logo.style.left = `${logo.offsetLeft}px`;
+        logo.offsetHeight;  // Forzar el reflujo
+        logo.style.top = '';
+        logo.style.left = '';
+        logo.style.transform = '';
+        logo.style.zIndex = '';
+        logo.style.position = '';
 
         infoWebstarz.style.transition = 'opacity 0.5s ease';
         infoWebstarz.style.opacity = '0';
         setTimeout(() => {
             infoWebstarz.style.display = 'none';
-        }, 500); 
+        }, 500);
 
         fondo.style.transition = 'opacity 0.5s ease';
         fondo.style.opacity = '0';
         setTimeout(() => {
             fondo.remove();
-        }, 500); 
+        }, 500);
 
         idProyectos.style.display = 'block';
-        idProyectos.style.position = ''; 
-        idProyectos.style.zIndex = ''; 
+        idProyectos.style.position = '';
+        idProyectos.style.zIndex = '';
     } else {
+        // Cambiar a la vista alternativa
         logo.style.position = 'fixed';
         logo.style.transition = 'transform 0.5s ease, top 0.5s ease, left 0.5s ease';
-        logo.style.top = `${logo.offsetTop}px`; 
-        logo.style.left = `${logo.offsetLeft}px`; 
-
-        logo.offsetHeight;
-
-        logo.style.top = '5%';
+        logo.style.top = `${logo.offsetTop}px`;
+        logo.style.left = `${logo.offsetLeft}px`;
+        logo.offsetHeight;  // Forzar el reflujo
+        logo.style.top = isLargeScreen ? '0%' : '5%';
         logo.style.left = '50%';
-        logo.style.transform = 'translateX(-50%) scale(1.5)'; 
-        
-        idProyectos.style.display = 'none'; 
+        logo.style.transform = isLargeScreen ? 'translateX(-50%) scale(0.6)' : 'translateX(-50%) scale(1.5)';
+
+        idProyectos.style.display = 'none';
 
         infoWebstarz.style.display = 'flex';
-        infoWebstarz.style.opacity = '1'; 
+        infoWebstarz.style.opacity = '1';
 
         const newFondo = document.createElement('div');
         newFondo.classList.add('fondo');
-        newFondo.style.backgroundColor = 'aliceblue'; 
+        newFondo.style.backgroundColor = 'aliceblue';
         newFondo.style.position = 'fixed';
         newFondo.style.top = '0';
         newFondo.style.left = '0';
@@ -250,19 +245,22 @@ document.querySelector('.logo-button').addEventListener('click', function () {
         newFondo.style.zIndex = highestZIndex++;
         document.body.appendChild(newFondo);
 
-    
-
         // Crear estrellas en el fondo
         for (let i = 0; i < 100; i++) {
             const star = document.createElement('div');
             star.classList.add('star');
             star.style.left = `${Math.random() * 100}vw`;
-            star.style.animationDuration = `${Math.random() * 3 + 2}s`; 
-            star.style.animationDelay = `${Math.random() * 5}s`; 
+            star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            star.style.animationDelay = `${Math.random() * 5}s`;
             newFondo.appendChild(star);
         }
     }
-});
+}
+
+// Asignar el EventListener a los botones .logo-button y .arrow-button
+document.querySelector('.logo-button').addEventListener('click', toggleView);
+document.querySelector('.arrow-button').addEventListener('click', toggleView);
+
 
 
 
@@ -360,3 +358,4 @@ document.getElementById('toggle-lang-en').addEventListener('click', function () 
     window.location.href = 'index-en.html';
 });
 
+// --- hasta aca nomas che 2---
