@@ -176,16 +176,19 @@ function toggleView() {
     const infoWebstarz = document.getElementById('infoWebstarz');
     const isLargeScreen = window.matchMedia('(min-width: 1920px)').matches;
     const footer = document.querySelector('footer');
+    const isSmallScreen = window.matchMedia('(max-width: 768px)').matches;
 
-    // Alternar la visibilidad del footer
-    footer.style.display = (footer.style.display === 'none' || footer.style.display === '') ? 'flex' : 'none';
+    // Alternar la visibilidad del footer en pantalla mobile
+    if (isSmallScreen) {
+        footer.style.display = (footer.style.display === 'none' || footer.style.display === '') ? 'flex' : 'none';
+    }
 
     // Alternar la reproducción del sonido
     if (!soundInfoWebstarz.paused) {
         soundInfoWebstarz.pause();
         soundInfoWebstarz.currentTime = 0;
     } else {
-        soundInfoWebstarz.volume = 0.1;
+        soundInfoWebstarz.volume = 0.3;
         soundInfoWebstarz.loop = true;
         soundInfoWebstarz.play();
     }
