@@ -179,9 +179,9 @@ function toggleView() {
     const isSmallScreen = window.matchMedia('(max-width: 768px)').matches;
 
     // Alternar la visibilidad del footer en pantalla mobile
-    if (isSmallScreen) {
-        footer.style.display = (footer.style.display === 'none' || footer.style.display === '') ? 'flex' : 'none';
-    }
+    // if (isSmallScreen) {
+    //     footer.style.display = (footer.style.display === 'none' || footer.style.display === '') ? 'flex' : 'none';
+    // }
 
     // Alternar la reproducción del sonido
     if (!soundInfoWebstarz.paused) {
