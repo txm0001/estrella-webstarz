@@ -1,813 +1,1490 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>estrella.webstarz</title>
-    <meta name="description" content="estrella.webstarz is a sidereal community of artists, you can find our products at Lab Odor (Bs. As., Argentina), for orders anywhere in the world contact us!">
-    <meta name="keywords" content="upcycling, fashion, recycled clothing, sustainable clothing, sustainable fashion, recycled products, estrella, webstarz, information, help">
-    <meta name="author" content="tom werth">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://estrella-webstarz.com/">
-    <link rel="alternate" hreflang="es" href="https://estrella-webstarz.com/">
-    <link rel="alternate" hreflang="en" href="https://estrella-webstarz.com/index-en.html">
-    <link id="strelastar" rel="icon" href="img/logoSimple.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta
+      name="description"
+      content="estrella.webstarz is a sidereal community of artists, you can find our products at Lab Odor (Bs. As., Argentina), for orders anywhere in the world contact us!"
+    />
+    <meta
+      name="keywords"
+      content="upcycling, fashion, recycled clothing, sustainable clothing, sustainable fashion, recycled products, estrella, webstarz, information, help"
+    />
+    <meta name="author" content="tom werth" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://estrella-webstarz.com/" />
+    <link rel="alternate" hreflang="es" href="https://estrella-webstarz.com/" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+      rel="alternate"
+      hreflang="en"
+      href="https://estrella-webstarz.com/index-en.html"
+    />
+    <link id="strelastar" rel="icon" href="img/logoSimple.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body class="hidden">
-
+  <body class="hidden">
     <div id="loader">
-        <img src="img/logoAnim.gif" alt="Cargando...">
+      <img src="img/logoAnim.gif" alt="Cargando..." />
     </div>
 
     <main id="content">
-        <header>
-            <div class="language-toggle">
-                <button id="toggle-lang-es">es</button>
-                <span>|</span>
-                <button id="toggle-lang-en">en</button>
-
-
-            </div>
-        </header>
-        <div id="personaje">
-            <img src="img/personajes/webstarElf1.png" alt="personaje">
+      <header>
+        <div class="language-toggle">
+          <button id="toggle-lang-es">es</button>
+          <span>|</span>
+          <button id="toggle-lang-en">en</button>
         </div>
-        <div class="column column-info">
-            <nav class="logo-button">
-                <button class="button">
-                    <img src="img/logo.png" alt="logo">
-                </button>
-            </nav>
-            <!-- <button id="dibuSonido">
+      </header>
+      <div id="personaje">
+        <img src="img/personajes/webstarElf1.png" alt="personaje" />
+      </div>
+      <div class="column column-info">
+        <nav class="logo-button">
+          <button class="button">
+            <img src="img/logo.png" alt="logo" />
+          </button>
+        </nav>
+        <!-- <button id="dibuSonido">
             <img src="img/dibu.gif" alt="dibu">
         </button> -->
-            <!-- <h1 class="title" style="display: none;">
+        <!-- <h1 class="title" style="display: none;">
                 estrella.webstarz
             </h1> -->
-            <ul id="id-proyectos">
-                <li class="info-proyecto" id="arxe">
-                    <a href="https://www.instagram.com/arxe____/" target="_blank">arxe</a>
-                    <div class="container-proyecto" id="arxe-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/arxe-pic.jpg" alt="logo arxe">
-                        </div>
-                        <p class="project-descrpt">ARXE is a textile project that starts from exploring a personal
-                            imaginary and developing techniques around it.
-                            Works on the garments through direct contact, getting involved with the textiles she chooses
-                            and bringing them to a state of disintegration, rupture and breakage. In a universe where
-                            the passage of time is the starting point for the construction of a second skin.
-                        </p>
-                    </div>
-                </li>
-                <li class="info-proyecto" id="comunidad-trans">
-                    <a href="https://www.instagram.com/comunidad.trans_caricatura/"
-                        target="_blank">comunidad.trans_caricatura</a>
-                    <div class="container-proyecto" id="comunidadTrans-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/comunidadTrans-pic.jpg" alt="logo comunidad trans caricatura">
-                        </div>
-                        <p class="project-descrpt">of specific sensibility and various explorations, design informed by
-                            curiosity and eagerness for the unknown or - remarkable or + strange, in constant reference
-                            to image collecting and audiovisual media.
-                            - unique pieces re-cycled and re-signified guided by experimental processes; diverse
-                            characterisations of particular characters in imagined universes with alternative dress
-                            codes.
-                        </p>
-                    </div>
-                </li>
-                <li class="info-proyecto" id="corel">
-                    <a href="https://www.instagram.com/corel______/" target="_blank">corel</a>
-                    <div class="container-proyecto" id="corel-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/corel-pic.jpg" alt="logo corel">
-                        </div>
-                        <p class="project-descrpt">COREL is a conscious clothing project, that's why they work with
-                            reduced stock, in addition to the fact that they make all their material by hand, all the
-                            fabrics they carefully select are recycled to avoid overproduction. The main objective of
-                            the project is to reduce thoughtless consumption and normalize responsible purchasing to
-                            invest in quality and recycled clothing.
-                        </p>
-                    </div>
-                </li>
-                <li class="info-proyecto" id="isa-archivos">
-                    <a href="https://instagram.com/issaarchivos/" target="_blank">issaarchivos</a>
-                    <div class="container-proyecto" id="isa-archivos-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/issaarchivos-pic.jpg" alt="logo isa archivos">
-                        </div>
-                        <p class="project-descrpt">SSAARCHIVOS frames an assemblage of disused fabrics, articles and
-                            obsolete merchandise. Each piece is handmade in Buenos Aires and has been reconverted, using
-                            unrepeatable materials.</p>
-                    </div>
-                </li>
-                <li class="info-proyecto" id="ju_ishiii">
-                    <a href="https://www.instagram.com/ju_ishiii/" target="_blank">ju ishi i</a>
-                    <div class="container-proyecto" id="juishii-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/juishii-pic.jpg" alt="logo juishi">
-                        </div>
-                        <p class="project-descrpt">JU ISHI I is a project of transmuted garments that emerge from a
-                            chaotic magical experimentation. sigils that evoke the power and tenderness of those who
-                            inhabit them.
-                        </p>
-                    </div>
-                </li>
-                <li class="info-proyecto" id="lame_beauty_item">
-                    <a href="https://www.instagram.com/lame_beauty_item/" target="_blank">lame_beauty_item</a>
-                    <div class="container-proyecto" id="lameBeauty-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/lameBeauty-pic.jpg" alt="logo lame beauty item">
-                        </div>
-                        <p class="project-descrpt">LAME_BEAUTY_ITEM is an upcycling project of unique handmade garments.
-                        </p>
-                    </div>
-                </li>
-                <li class="info-proyecto" id="mushiii">
-                    <a href="https://www.instagram.com/mushhiiii/" target="_blank">mushhiiii</a>
-                    <div class="container-proyecto" id="mushhiiii-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/mushhiiii-pic.jpg" alt="logo mushhiiii">
-                        </div>
-                        <p class="project-descrpt">MUSHHIIII⋆౨ৎ˚⟡˖ are fluffy pieces for diving, resting and playing.
-                            Energy bugs, cotton wool clouds
-                        </p>
-                    </div>
-                </li>
-                <li class="info-proyecto" id="odor">
-                    <a href="https://www.instagram.com/odor.sudor/" target="_blank">odor</a>
-                    <div class="container-proyecto" id="odor-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/odor-pic.jpg" alt="logo odor">
-                        </div>
-                        <p class="project-descrpt">ODOR is a laboratory of olfactory styling, working with the
-                            distillation of essential oils, the search for essences and the creation of olfactory scenes
-                            in different media and experiences. It investigates how scent travels in the air and how
-                            this animal chemical communication takes place between humans and everything around us.
-                        </p>
-                    </div>
-                </li>
-                <!-- <li class="info-proyecto" id="proteccion">
-                    <a href="https://www.instagram.com/proteccion_/" target="_blank">proteccion</a>
-                    <div class="container-proyecto" id="proteccion-info">
-                        <div class="image-container">
-                            <img src="img/imgProyectos/proteccion-pic.jpg" alt="logo proteccion">
-                        </div>
-                        <p class="project-descrpt">PROTECTION is to exalt the individual aspects that empower us and
-                            cover what we want to watch over. PROTECTION is created from experiences of contemporary
-                            night and digital, diurnal and altered life. Consciousness and body must be protected. The
-                            search for maximum satisfaction is the key.
-                        </p>
-                    </div>
-                </li> -->
-            </ul>
+        <ul id="id-proyectos">
+          <li class="info-proyecto" id="arxe">
+            <a href="https://www.instagram.com/arxe____/" target="_blank"
+              >arxe</a
+            >
+            <div class="container-proyecto" id="arxe-info">
+              <div class="image-container">
+                <img src="img/imgProyectos/arxe-pic.jpg" alt="logo arxe" />
+              </div>
+              <p class="project-descrpt">
+                ARXE is a textile project that starts from exploring a personal
+                imaginary and developing techniques around it. Works on the
+                garments through direct contact, getting involved with the
+                textiles she chooses and bringing them to a state of
+                disintegration, rupture and breakage. In a universe where the
+                passage of time is the starting point for the construction of a
+                second skin.
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="comunidad-trans">
+            <a
+              href="https://www.instagram.com/comunidad.trans_caricatura/"
+              target="_blank"
+              >comunidad.trans_caricatura</a
+            >
+            <div class="container-proyecto" id="comunidadTrans-info">
+              <div class="image-container">
+                <img
+                  src="img/imgProyectos/comunidadTrans-pic.jpg"
+                  alt="logo comunidad trans caricatura"
+                />
+              </div>
+              <p class="project-descrpt">
+                of specific sensibility and various explorations, design
+                informed by curiosity and eagerness for the unknown or -
+                remarkable or + strange, in constant reference to image
+                collecting and audiovisual media. - unique pieces re-cycled and
+                re-signified guided by experimental processes; diverse
+                characterisations of particular characters in imagined universes
+                with alternative dress codes.
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="corel">
+            <a href="https://www.instagram.com/corel______/" target="_blank"
+              >corel</a
+            >
+            <div class="container-proyecto" id="corel-info">
+              <div class="image-container">
+                <img src="img/imgProyectos/corel-pic.jpg" alt="logo corel" />
+              </div>
+              <p class="project-descrpt">
+                COREL is a conscious clothing project, that's why they work with
+                reduced stock, in addition to the fact that they make all their
+                material by hand, all the fabrics they carefully select are
+                recycled to avoid overproduction. The main objective of the
+                project is to reduce thoughtless consumption and normalize
+                responsible purchasing to invest in quality and recycled
+                clothing.
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="eltonmix">
+            <a href="https://www.instagram.com/elton.mix/" target="_blank"
+              >El Tonmix</a
+            >
+            <div class="container-proyecto" id="eltonmix-info">
+              <div class="image-container">
+                <img
+                  src="img/imgProyectos/eltonmix-pic.jpg"
+                  alt="logo eltonmix"
+                />
+              </div>
+              <p class="project-descrpt">
+                El Tonmix is a multidisciplinary translation project where the
+                senses take materialities from the daily stimulus and the
+                presence of the craft. Each piece is handmade.
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="estoesuntesoro">
+            <a href="https://www.instagram.com/estoesuntesoro/" target="_blank"
+              >ESTO ES UN TESORO</a
+            >
+            <div class="container-proyecto" id="estoesuntesoro-info">
+              <div class="image-container">
+                <img
+                  src="img/imgProyectos/estoesuntesoro-pic.jpg"
+                  alt="logo esto es un tesoro"
+                />
+              </div>
+              <p class="project-descrpt">
+                The universe of ESTO ES UN TESORO is made up of unique pieces
+                that leave a record of the intimate, the sensitive,
+                craftsmanship or perhaps tenderness.
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="gigi">
+            <a href="https://www.instagram.com/gigiipure/" target="_blank"
+              >gigi</a
+            >
+            <div class="container-proyecto" id="gigi-info">
+              <div class="image-container">
+                <img src="img/imgProyectos/gigiipure-pic.jpg" alt="logo gigi" />
+              </div>
+              <p class="project-descrpt">
+                Gigi is a brand born of summer, the smell of rain in Buenos
+                Aires and the strong sun of the Mendoza mountains. Each piece is
+                carefully crafted by hand
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="isa-archivos">
+            <a href="https://instagram.com/issaarchivos/" target="_blank"
+              >issaarchivos</a
+            >
+            <div class="container-proyecto" id="isa-archivos-info">
+              <div class="image-container">
+                <img
+                  src="img/imgProyectos/issaarchivos-pic.jpg"
+                  alt="logo isa archivos"
+                />
+              </div>
+              <p class="project-descrpt">
+                SSAARCHIVOS frames an assemblage of disused fabrics, articles
+                and obsolete merchandise. Each piece is handmade in Buenos Aires
+                and has been reconverted, using unrepeatable materials.
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="ju_ishiii">
+            <a href="https://www.instagram.com/ju_ishiii/" target="_blank"
+              >ju ishi i</a
+            >
+            <div class="container-proyecto" id="juishii-info">
+              <div class="image-container">
+                <img src="img/imgProyectos/juishii-pic.jpg" alt="logo juishi" />
+              </div>
+              <p class="project-descrpt">
+                JU ISHI I is a project of transmuted garments that emerge from a
+                chaotic magical experimentation. sigils that evoke the power and
+                tenderness of those who inhabit them.
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="lame_beauty_item">
+            <a
+              href="https://www.instagram.com/lame_beauty_item/"
+              target="_blank"
+              >lame_beauty_item</a
+            >
+            <div class="container-proyecto" id="lameBeauty-info">
+              <div class="image-container">
+                <img
+                  src="img/imgProyectos/lameBeauty-pic.jpg"
+                  alt="logo lame beauty item"
+                />
+              </div>
+              <p class="project-descrpt">
+                LAME_BEAUTY_ITEM is an upcycling project of unique handmade
+                garments.
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="mushiii">
+            <a href="https://www.instagram.com/mushhiiii/" target="_blank"
+              >mushhiiii</a
+            >
+            <div class="container-proyecto" id="mushhiiii-info">
+              <div class="image-container">
+                <img
+                  src="img/imgProyectos/mushhiiii-pic.jpg"
+                  alt="logo mushhiiii"
+                />
+              </div>
+              <p class="project-descrpt">
+                MUSHHIIII⋆౨ৎ˚⟡˖ are fluffy pieces for diving, resting and
+                playing. Energy bugs, cotton wool clouds
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="nikiri">
+            <a href="https://www.instagram.com/nikiri__/" target="_blank"
+              >nikiri</a
+            >
+            <div class="container-proyecto" id="nikiri-info">
+              <div class="image-container">
+                <img src="img/imgProyectos/nikiri-pic.jpg" alt="logo nikiri" />
+              </div>
+              <p class="project-descrpt">
+                Nikiri is a diy clothing and accessories project. they works
+                with scraps and second hand clothes meow meow meow meow
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="nipper">
+            <a href="https://www.instagram.com/nipper.ac/" target="_blank"
+              >nipper</a
+            >
+            <div class="container-proyecto" id="nipper-info">
+              <div class="image-container">
+                <img src="img/imgProyectos/nipper-pic.jpg" alt="logo nipper" />
+              </div>
+              <p class="project-descrpt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Architecto sunt minima quaerat perferendis repudiandae obcaecati
+                omnis, unde amet a molestias dolores
+              </p>
+            </div>
+          </li>
+          <li class="info-proyecto" id="odor">
+            <a href="https://www.instagram.com/odor.sudor/" target="_blank"
+              >odor</a
+            >
+            <div class="container-proyecto" id="odor-info">
+              <div class="image-container">
+                <img src="img/imgProyectos/odor-pic.jpg" alt="logo odor" />
+              </div>
+              <p class="project-descrpt">
+                ODOR is a laboratory of olfactory styling, working with the
+                distillation of essential oils, the search for essences and the
+                creation of olfactory scenes in different media and experiences.
+                It investigates how scent travels in the air and how this animal
+                chemical communication takes place between humans and everything
+                around us.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!--- SECCION ROPITAS -->
+      <div class="container-ropa">
+        <!-- ARXE -->
+        <div class="draggable" id="ax6">
+          <img
+            id="ax6-pic"
+            src="img/prendas/arxe-80000-AX6.png"
+            title="arxe    cod:AX6      $0LD.0UT"
+            alt="arxeAX6"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX6 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ax3">
+          <img
+            id="ax3-pic"
+            src="img/prendas/arxe-120000-AX3.png"
+            title="arxe    cod:AX3      $OLDOUT"
+            alt="arxeAX3"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX3 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ax4">
+          <img
+            id="ax4-pic"
+            src="img/prendas/arxe-120000-AX4.png"
+            title="arxe    cod:AX4      $OLDOUT"
+            alt="arxeAX4"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX4 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ax1">
+          <img
+            id="ax1-pic"
+            src="img/prendas/arxe-140000-AX1.png"
+            title="arxe    cod:AX1      $140.000"
+            alt="arxeAX1"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX1 $140.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ax2">
+          <img
+            id="ax2-pic"
+            src="img/prendas/arxe-140000-AX2.png"
+            title="arxe    cod:AX2      $140.000"
+            alt="arxeAX2"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX2 $140.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ax5">
+          <img
+            id="ax5-pic"
+            src="img/prendas/arxe-150000-AX5.png"
+            title="arxe    cod:AX5      $0LD.0UT"
+            alt="arxeAX5"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX5 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ax7">
+          <img
+            id="ax7-pic"
+            src="img/prendas/arxe-180000-AX7.png"
+            title="arxe    cod:AX7      $OLDOUT"
+            alt="arxeAX7"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX7 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ax18">
+          <img
+            id="ax18-pic"
+            src="img/prendas/arxe-80000-AX18.png"
+            title="arxe    cod:AX18      $0LD.0UT"
+            alt="arxeAX18"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX18 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ax20">
+          <img
+            id="ax20-pic"
+            src="img/prendas/tanda3/arxe-80000-AX20.png"
+            title="arxe    cod:AX20      $80000"
+            alt="arxeAX20"
+          />
+          <div class="infoPrenda">
+            <span>Arxe</span>
+            <span class="precio">AX20 $80000</span>
+          </div>
         </div>
 
-        <!--- SECCION ROPITAS -->
-        <div class="container-ropa">
-            <!-- ARXE -->
-            <div class="draggable" id="ax6">
-                <img id="ax6-pic" src="img/prendas/arxe-80000-AX6.png" title="arxe    cod:AX6      precio=$80.000"
-                    alt="arxeAX6">
-                <div class="infoPrenda">
-                    <span>Arxe</span>
-                    <span class="precio">AX6 $80.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ax3">
-                <img id="ax3-pic" src="img/prendas/arxe-120000-AX3.png" title="arxe    cod:AX3      precio=$OLDOUT"
-                    alt="arxeAX3">
-                <div class="infoPrenda">
-                    <span>Arxe</span>
-                    <span class="precio">AX3 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="ax4">
-                <img id="ax4-pic" src="img/prendas/arxe-120000-AX4.png" title="arxe    cod:AX4      precio=$OLDOUT"
-                    alt="arxeAX4">
-                <div class="infoPrenda">
-                    <span>Arxe</span>
-                    <span class="precio">AX4 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="ax1">
-                <img id="ax1-pic" src="img/prendas/arxe-140000-AX1.png" title="arxe    cod:AX1      precio=$140.000"
-                    alt="arxeAX1">
-                <div class="infoPrenda">
-                    <span>Arxe</span>
-                    <span class="precio">AX1 $140.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ax2">
-                <img id="ax2-pic" src="img/prendas/arxe-140000-AX2.png" title="arxe    cod:AX2      precio=$140.000"
-                    alt="arxeAX2">
-                <div class="infoPrenda">
-                    <span>Arxe</span>
-                    <span class="precio">AX2 $140.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ax5">
-                <img id="ax5-pic" src="img/prendas/arxe-150000-AX5.png" title="arxe    cod:AX5      precio=$150.000"
-                    alt="arxeAX5">
-                <div class="infoPrenda">
-                    <span>Arxe</span>
-                    <span class="precio">AX5 $150.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ax7">
-                <img id="ax7-pic" src="img/prendas/arxe-180000-AX7.png" title="arxe    cod:AX7      precio=$OLDOUT"
-                    alt="arxeAX7">
-                <div class="infoPrenda">
-                    <span>Arxe</span>
-                    <span class="precio">AX7 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="ax18">
-                <img id="ax18-pic" src="img/prendas/arxe-80000-AX18.png" title="arxe    cod:AX18      precio=$80.000"
-                    alt="arxeAX18">
-                <div class="infoPrenda">
-                    <span>Arxe</span>
-                    <span class="precio">AX18 $80.000</span>
-                </div>
-            </div>
-
-            <!-- COMUNIDAD.t_c -->
-            <div class="draggable" id="ctc1">
-                <img id="ctc1-pic" src="img/prendas/comunidad-trans-caricatura-60000-CTC1.png"
-                    title="comunidad.t_c  cod:CTC1  $60.000" alt="comunidadCTC1">
-                <div class="infoPrenda">
-                    <span>comunidad.trans_caricatura</span>
-                    <span class="precio">CTC1 $60.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ctc2">
-                <img id="ctc2-pic" src="img/prendas/comunidad-trans-caricatura-SOLDOUT.png"
-                    title="comunidad.t_c  $OLDOUT" alt="comunidadCTC2sOULDOUT">
-                <div class="infoPrenda">
-                    <span>comunidad.trans_caricatura</span>
-                    <span class="precio">CTC2 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="ctc3">
-                <img id="ctc3-pic" src="img/prendas/comunidad-trans-caricatura-60000-CTC3.png"
-                    title="comunidad.t_c  cod:CTC3  $OLDOUT" alt="comunidadCTC3">
-                <div class="infoPrenda">
-                    <span>comunidad.trans_caricatura</span>
-                    <span class="precio">CTC3 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="ctc4">
-                <img id="ctc4-pic" src="img/prendas/comunidad-trans-caricatura-50000-CTC4.png"
-                    title="comunidad.t_c  cod:CTC4  $50.000" alt="comunidadCTC4">
-                <div class="infoPrenda">
-                    <span>comunidad.trans_caricatura</span>
-                    <span class="precio">CTC4 $50.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ctc5">
-                <img id="ctc5-pic" src="img/prendas/comunidad-trans-caricatura-60000-CTC5.png"
-                    title="comunidad.t_c  cod:CTC5  $60.000" alt="comunidadCTC5">
-                <div class="infoPrenda">
-                    <span>comunidad.trans_caricatura</span>
-                    <span class="precio">CTC5 $60.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ctc6">
-                <img id="ctc6-pic" src="img/prendas/comunidad-trans-caricatura-45000-CTC6.png"
-                    title="comunidad.t_c  cod:CTC6  $45.000" alt="comunidadCTC6">
-                <div class="infoPrenda">
-                    <span>comunidad.trans_caricatura</span>
-                    <span class="precio">CTC6 $45.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ctc10">
-                <img id="ctc10-pic" src="img/prendas/comunidad-trans-caricatura-30000-CTC10.png"
-                    title="comunidad.t_c  cod:CTC10  $30.000" alt="comunidadCTC10">
-                <div class="infoPrenda">
-                    <span>comunidad.trans_caricatura</span>
-                    <span class="precio">CTC10 $30.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ctc12">
-                <img id="ctc12-pic" src="img/prendas/comunidad-trans-caricatura-70000-CTC12.png"
-                    title="comunidad.t_c  cod:CTC12  $70.000" alt="comunidadCTC12">
-                <div class="infoPrenda">
-                    <span>comunidad.trans_caricatura</span>
-                    <span class="precio">CTC12 $70.000</span>
-                </div>
-            </div>
-            
-            <!-- COREL -->
-            <div class="draggable" id="corel1">
-                <img id="corel1-pic" src="img/prendas/corel-145000-CO1.png" title="corel   cod:CO1   $OLDOUT"
-                    alt="corelCO1">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO1 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel2">
-                <img id="corel2-pic" src="img/prendas/corel-145000-CO2.png" title="corel   cod:CO2   $145.000"
-                    alt="corelCO2">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO2 $145.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel3">
-                <img id="corel3-pic" src="img/prendas/corel-145000-CO3.png" title="corel   cod:CO3   $OLDOUT"
-                    alt="corelCO3">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO3 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel4">
-                <img id="corel4-pic" src="img/prendas/corel-60000-CO4.png" title="corel   cod:CO4   $OLDOUT"
-                    alt="corelCO4">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO4 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel5">
-                <img id="corel5-pic" src="img/prendas/corel-69000-CO5.png" title="corel   cod:CO5   RE$ERVAD0"
-                    alt="corelCO5">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO5 RE$ERVAD0</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel8">
-                <img id="corel8-pic" src="img/prendas/corel-69000-CO8.png" title="corel   cod:CO8   $69.000"
-                    alt="corelCO8">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO6 $69.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel9">
-                <img id="corel9-pic" src="img/prendas/corel-69000-CO9.png" title="corel   cod:CO9   $69.000"
-                    alt="corelCO9">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO9 $69.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel11">
-                <img id="corel11-pic" src="img/prendas/corel-145000-CO11.png" title="corel   cod:CO11   $145.000"
-                    alt="corelCO11">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO11 $145.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel13">
-                <img id="corel13-pic" src="img/prendas/corel-115000-CO13.png" title="corel   cod:CO13   $115.000"
-                    alt="corelCO13">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO13 $115.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="corel18">
-                <img id="corel18-pic" src="img/prendas/corel-69000-CO18.png" title="corel   cod:CO18   $69.000"
-                    alt="corelCO18">
-                <div class="infoPrenda">
-                    <span>corel</span>
-                    <span class="precio">CO18 69.000</span>
-                </div>
-            </div>
-
-            <!-- ISSAARCHIVOS -->
-            <div class="draggable" id="iss1">
-                <img id="iss1-pic" src="img/prendas/issaarchivos-50000-ISS1.png"
-                    title="issaarchivos   cod:ISS1   $OLDOUT" alt="issaarchivosISA1">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS1 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss2">
-                <img id="iss2-pic" src="img/prendas/issaarchivos-30000-ISS2.png"
-                    title="issaarchivos   cod:ISS2   $OLDOUT" alt="issaarchivosISA2">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS2 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss3">
-                <img id="iss3-pic" src="img/prendas/issaarchivos-50000-ISS3.png"
-                    title="issaarchivos   cod:ISS3   $OLDOUT" alt="issaarchivosISA3">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS3 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss4">
-                <img id="iss4-pic" src="img/prendas/issaarchivos-60000-ISS4.png"
-                    title="issaarchivos   cod:ISS4   $60.000" alt="issaarchivosISA4">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS4 $60.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss5">
-                <img id="iss5-pic" src="img/prendas/issaarchivos-40000-ISS5.png"
-                    title="issaarchivos   cod:ISS5   $40.000" alt="issaarchivosISA5">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS5 $40.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss6">
-                <img id="iss6-pic" src="img/prendas/issaarchivos-45000-ISS6.png"
-                    title="issaarchivos   cod:ISS6   $OLDOUT" alt="issaarchivosISA6">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS6 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss7">
-                <img id="iss7-pic" src="img/prendas/issaarchivos-35000-ISS7.png"
-                    title="issaarchivos   cod:ISS7   $OLDOUT" alt="issaarchivosISA7">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS7 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss13">
-                <img id="iss13-pic" src="img/prendas/issaarchivos-40000-ISS13.png"
-                    title="issaarchivos   cod:ISS13   $40.000" alt="issaarchivosISA13">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS13 $40.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss14">
-                <img id="iss14-pic" src="img/prendas/issaarchivos-35000-ISS14.png"
-                    title="issaarchivos   cod:ISS14   $35.000" alt="issaarchivosISA14">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS14 $35.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss17">
-                <img id="iss17-pic" src="img/prendas/issaarchivos-35000-ISS17.png"
-                    title="issaarchivos   cod:ISS17   $35.000" alt="issaarchivosISA17">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS17 $35.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss20">
-                <img id="iss20-pic" src="img/prendas/issaarchivos-50000-ISS20.png"
-                    title="issaarchivos   cod:ISS20   $50.000" alt="issaarchivosISA20">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS20 $50.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss22">
-                <img id="iss22-pic" src="img/prendas/issaarchivos-40000-ISS22.png"
-                    title="issaarchivos   cod:ISS22   $40.000" alt="issaarchivosISA22">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS22 $40.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss25">
-                <img id="iss25-pic" src="img/prendas/issaarchivos-50000-ISS25.png"
-                    title="issaarchivos   cod:ISS25   $50.000" alt="issaarchivosISA25">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS25 $50.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="iss26">
-                <img id="iss26-pic" src="img/prendas/issaarchivos-50000-ISS26.png"
-                    title="issaarchivos   cod:ISS26   $50.000" alt="issaarchivosISA26">
-                <div class="infoPrenda">
-                    <span>issaarchivos</span>
-                    <span class="precio">ISS26 $50.000</span>
-                </div>
-            </div>
-
-            <!-- JUISHII -->
-            <div class="draggable" id="ju1">
-                <img id="ju1-pic" src="img/prendas/JUISHII-82000-JU1.png" title="juishi   cod:JU1   $OLDOUT"
-                    alt="juishiJU1">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU1 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju2">
-                <img id="ju2-pic" src="img/prendas/JUISHII-50000-JU2.png" title="juishi   cod:JU2   $OLDOUT"
-                    alt="juishiJU2">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU2 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju3">
-                <img id="ju3-pic" src="img/prendas/JUISHII-50000-JU3.png" title="juishi   cod:JU3   $50.000"
-                    alt="juishiJU3">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU3 $50.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju4">
-                <img id="ju4-pic" src="img/prendas/JUISHII-50000-JU4.png" title="juishi   cod:JU4   $50.000"
-                    alt="juishiJU4">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU4 $50.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju5">
-                <img id="ju5-pic" src="img/prendas/JUISHII-48000-JU5.png" title="juishi   cod:JU5   $OLDOUT"
-                    alt="juishiJU5">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU5 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju16">
-                <img id="ju16-pic" src="img/prendas/JUISHII-50000-JU16.png" title="juishi   cod:JU16   $50.000"
-                    alt="juishiJU16">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU16 $50.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju20">
-                <img id="ju20-pic" src="img/prendas/JUISHII-50000-JU20.png" title="juishi   cod:JU20   $50.000"
-                    alt="juishiJU20">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU20 $50.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju21">
-                <img id="ju21-pic" src="img/prendas/JUISHII-50000-JU21.png" title="juishi   cod:JU21   $50.000"
-                    alt="juishiJU21">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU21 $50.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju22">
-                <img id="ju22-pic" src="img/prendas/JUISHII-55000-JU22.png" title="juishi   cod:JU22   $55.000"
-                    alt="juishiJU22">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU22 $55.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="ju24">
-                <img id="ju24-pic" src="img/prendas/JUISHII-70000-JU24.png" title="juishi   cod:JU24   $70.000"
-                    alt="juishiJU24">
-                <div class="infoPrenda">
-                    <span>ju ishi i</span>
-                    <span class="precio">JU24 $70.000</span>
-                </div>
-            </div>
-            
-
-            <!-- LAME BEAUTY ITEM -->
-            <div class="draggable" id="lbi1">
-                <img id="lbi1-pic" src="img/prendas/lame-beauty-item-35000-LBI1.png"
-                    title="lame_beauty_item   cod:LBI1   $35.000" alt="lameBeautyLBI1">
-                <div class="infoPrenda">
-                    <span>lame_beauty_item</span>
-                    <span class="precio">LB1 $35.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="lbi2">
-                <img id="lbi2-pic" src="img/prendas/lame-beauty-item-45000-LBI2.png"
-                    title="lame_beauty_item   cod:LBI2   $OLDOUT" alt="lameBeautyLBI2">
-                <div class="infoPrenda">
-                    <span>lame_beauty_item</span>
-                    <span class="precio">LB2 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="lbi3">
-                <img id="lbi3-pic" src="img/prendas/lame-beauty-item-35000-LBI3.png"
-                    title="lame_beauty_item   cod:LBI3   $35.000" alt="lameBeautyLBI3">
-                <div class="infoPrenda">
-                    <span>lame_beauty_item</span>
-                    <span class="precio">LB3 $35.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="lbi4">
-                <img id="lbi4-pic" src="img/prendas/lame-beauty-item-35000-LBI4.png"
-                    title="lame_beauty_item   cod:LBI4   $35.000" alt="lameBeautyLBI4">
-                <div class="infoPrenda">
-                    <span>lame_beauty_item</span>
-                    <span class="precio">LB4 $35.000.-</span>
-                </div>
-            </div>
-            <div class="draggable" id="lbi5">
-                <img id="lbi5-pic" src="img/prendas/lame-beauty-item-35000-LBI5.png"
-                    title="lame_beauty_item   cod:LBI5   $35.000" alt="lameBeautyLBI5">
-                <div class="infoPrenda">
-                    <span>lame_beauty_item</span>
-                    <span class="precio">LB5 $35.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="lbi6">
-                <img id="lbi6-pic" src="img/prendas/lame-beauty-item-35000-LBI6.png"
-                    title="lame_beauty_item   cod:LBI6   $35.000" alt="lameBeautyLBI6">
-                <div class="infoPrenda">
-                    <span>lame_beauty_item</span>
-                    <span class="precio">LB6 $35.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="lbi7">
-                <img id="lbi7-pic" src="img/prendas/lame-beauty-item-35000-LBI7.png"
-                    title="lame_beauty_item   cod:LBI7   $35.000" alt="lameBeautyLBI7">
-                <div class="infoPrenda">
-                    <span>lame_beauty_item</span>
-                    <span class="precio">LB7 $35.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="lbi8">
-                <img id="lbi8-pic" src="img/prendas/lame-beauty-item-35000-LBI8.png"
-                    title="lame_beauty_item   cod:LBI8   $35.000" alt="lameBeautyLBI8">
-                <div class="infoPrenda">
-                    <span>lame_beauty_item</span>
-                    <span class="precio">LB8 $35.000</span>
-                </div>
-            </div>
-
-            <!-- MUSHHIIII -->
-            <div class="draggable" id="mu1">
-                <img id="mu1-pic" src="img/prendas/mushhhiii-40000-MU1.png" title="mushhiiii   cod:MU1   $40.000"
-                    alt="mushhiiiiMU1">
-                <div class="infoPrenda">
-                    <span>mushhiiii</span>
-                    <span class="precio">MU1 $40.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="mu2">
-                <img id="mu2-pic" src="img/prendas/mushhhiii-40000-MU2.png" title="mushhiiii   cod:MU2   $OLDOUT"
-                    alt="mushhiiiiMU2">
-                <div class="infoPrenda">
-                    <span>mushhiiii</span>
-                    <span class="precio">MU2 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="mu3">
-                <img id="mu3-pic" src="img/prendas/mushhhiii-40000-MU3.png" title="mushhiiii   cod:MU3   $40.000"
-                    alt="mushhiiiiMU3">
-                <div class="infoPrenda">
-                    <span>mushhiiii</span>
-                    <span class="precio">MU3 $40.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="mu4">
-                <img id="mu4-pic" src="img/prendas/mushhhiii-A-PEDIDO-MU4.png" title="mushhiiii   cod:MU4   $40.000"
-                    alt="mushhiiiiMU4">
-                <div class="infoPrenda">
-                    <span>mushhiiii</span>
-                    <span class="precio">MU4 MADE-TO-ORDER </span>
-                </div>
-            </div>
-            <div class="draggable" id="mu5">
-                <img id="mu5-pic" src="img/prendas/mushhhiiii-A-PEDIDO-MU5.png" title="mushhiiii   cod:MU5   A PEDIDO"
-                    alt="mushhiiiiMU5">
-                <div class="infoPrenda">
-                    <span>mushhiiii</span>
-                    <span class="precio">MU5 MADE-TO-ORDER</span>
-                </div>
-            </div>
-
-            <!-- ODOR -->
-            <div class="draggable" id="od1">
-                <img id="od1-pic" src="img/prendas/odor-20000-OD1.png" title="odor   cod:OD1   $20.000" alt="odorOD1">
-                <div class="infoPrenda">
-                    <span>odor</span>
-                    <span class="precio">OD1 $20.000</span>
-                </div>
-            </div>
-
-            <!-- PROTECCION -->
-            <!-- <div class="draggable" id="pr1">
-                <img id="pr1-pic" src="img/prendas/proteccion-55.000-PR1.png" title="proteccion   cod:PR1   $55.000" alt="proteccionPR1">
-                <div class="infoPrenda">
-                    <span>proteccion</span>
-                    <span class="precio">PR1 $55.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="pr2">
-                <img id="pr2-pic" src="img/prendas/proteccion-55.000-PR2.png" title="proteccion   cod:PR2   $55.000" alt="proteccionPR2">
-                <div class="infoPrenda">
-                    <span>proteccion</span>
-                    <span class="precio">PR2 $55.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="pr3">
-                <img id="pr3-pic" src="img/prendas/proteccion-55.000-PR3.png" title="proteccion   cod:PR3   $55.000" alt="proteccionPR3">
-                <div class="infoPrenda">
-                    <span>proteccion</span>
-                    <span class="precio">PR3 $55.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="pr4">
-                <img id="pr4-pic" src="img/prendas/proteccion-55.000-PR4.png" title="proteccion   cod:PR4   $55.000" alt="proteccionPR4">
-                <div class="infoPrenda">
-                    <span>proteccion</span>
-                    <span class="precio">PR4 $55.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="pr5">
-                <img id="pr5-pic" src="img/prendas/proteccion-55.000-PR5.png" title="proteccion   cod:PR5   $55.000" alt="proteccionPR5">
-                <div class="infoPrenda">
-                    <span>proteccion</span>
-                    <span class="precio">PR5 $55.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="pr6">
-                <img id="pr6-pic" src="img/prendas/proteccion-55.000-PR6.png" title="proteccion   cod:PR6   $OLDOUT" alt="proteccionPR6">
-                <div class="infoPrenda">
-                    <span>proteccion</span>
-                    <span class="precio">PR6 $OLDOUT</span>
-                </div>
-            </div>
-            <div class="draggable" id="pr7">
-                <img id="pr7-pic" src="img/prendas/proteccion-70.000-PR7.png" title="proteccion   cod:PR7   $70.000" alt="proteccionPR7">
-                <div class="infoPrenda">
-                    <span>proteccion</span>
-                    <span class="precio">PR7 $70.000</span>
-                </div>
-            </div>
-            <div class="draggable" id="pr8">
-                <img id="pr8-pic" src="img/prendas/proteccion-70.000-PR8.png" title="proteccion   cod:PR8   $70.000" alt="proteccionPR8">
-                <div class="infoPrenda">
-                    <span>proteccion</span>
-                    <span class="precio">PR8 $70.000</span>
-                </div>
-            </div> -->
+        <!-- COMUNIDAD.t_c -->
+        <div class="draggable" id="ctc1">
+          <img
+            id="ctc1-pic"
+            src="img/prendas/comunidad-trans-caricatura-60000-CTC1.png"
+            title="comunidad.t_c  cod:CTC1  $60.000"
+            alt="comunidadCTC1"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC1 $60.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc2">
+          <img
+            id="ctc2-pic"
+            src="img/prendas/comunidad-trans-caricatura-SOLDOUT.png"
+            title="comunidad.t_c  $OLDOUT"
+            alt="comunidadCTC2sOULDOUT"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC2 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc3">
+          <img
+            id="ctc3-pic"
+            src="img/prendas/comunidad-trans-caricatura-60000-CTC3.png"
+            title="comunidad.t_c  cod:CTC3  $OLDOUT"
+            alt="comunidadCTC3"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC3 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc4">
+          <img
+            id="ctc4-pic"
+            src="img/prendas/comunidad-trans-caricatura-50000-CTC4.png"
+            title="comunidad.t_c  cod:CTC4  $0LD.0UT0"
+            alt="comunidadCTC4"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC4 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc5">
+          <img
+            id="ctc5-pic"
+            src="img/prendas/comunidad-trans-caricatura-60000-CTC5.png"
+            title="comunidad.t_c  cod:CTC5  $60.000"
+            alt="comunidadCTC5"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC5 $60.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc6">
+          <img
+            id="ctc6-pic"
+            src="img/prendas/comunidad-trans-caricatura-45000-CTC6.png"
+            title="comunidad.t_c  cod:CTC6  $0LD.0UT"
+            alt="comunidadCTC6"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC6 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc10">
+          <img
+            id="ctc10-pic"
+            src="img/prendas/comunidad-trans-caricatura-30000-CTC10.png"
+            title="comunidad.t_c  cod:CTC10  $0LD.0UT"
+            alt="comunidadCTC10"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC10 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc12">
+          <img
+            id="ctc12-pic"
+            src="img/prendas/comunidad-trans-caricatura-70000-CTC12.png"
+            title="comunidad.t_c  cod:CTC12  $70.000"
+            alt="comunidadCTC12"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC12 $70.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc13">
+          <img
+            id="ctc13-pic"
+            src="img/prendas/tanda3/comunidad-trans-caricatura-55000-CTC13.png"
+            title="comunidad.t_c  cod:CTC13  $55.000"
+            alt="comunidadCTC13"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans_caricatura</span>
+            <span class="precio">CTC13 $55.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ctc18">
+          <img
+            id="ctc18-pic"
+            src="img/prendas/tanda3/comunidad-trans-caricatura-45000-CTC18.png"
+            title="comunidad.t_c  cod:CTC18  $45.000"
+            alt="comunidadCTC18"
+          />
+          <div class="infoPrenda">
+            <span>comunidad.trans-caricatura</span>
+            <span class="precio">CTC18 $45.000</span>
+          </div>
         </div>
 
-            <!--infoStarz-->
-        <section id="infoWebstarz">
-            <h1>estrella.webstarz</h1>
-            <p>is a sidereal community of artists </p>
-            <p>you can find our products at
-                <em>Lab Odor</em>
-            </p>
-            <p><strong><a href="https://www.google.com/maps?q=Vera+1350,+Ciudad+de+Buenos+Aires" target="_blank">
-                        <i class="fas fa-map-pin"></i>Vera 1350, Ciudad de Buenos Aires</a></strong></p>
-            <p>for orders anywhere in the world </p>
-            <p>contact us at
-                <a id="contact-info" class="lightbox"
-                href="javascript:location='mailto:\u0065\u0073\u0074\u0072\u0065\u006c\u006c\u0061\u0077\u0065\u0062\u0073\u0074\u0061\u0072\u007a\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0">
-                <script type="text/javascript">
-                    document.write('\u0065\u0073\u0074\u0072\u0065\u006c\u006c\u0061\u0077\u0065\u0062\u0073\u0074\u0061\u0072\u007a\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')
-                </script>
-            </a>
-            </p>
-            <!--  flecha para volver atras-->
-            <button class="arrow-button">
-                <img id="flecha-atras" src="img/icono-flecha.png" alt="volver">
-            </button>
-        </section>
-        <!-- Footer txm -->
-        <footer class="footer">
-            <p>
-                <a
-                    href="javascript:location='mailto:\u0068\u006f\u006c\u0061\u0040\u0065\u0073\u0074\u0072\u0065\u006c\u006c\u0061\u002d\u0077\u0065\u0062\u0073\u0074\u0061\u0072\u007a\u002e\u0063\u006f\u006d';void 0">
-                    <img src="img/icono-mail.png" alt="email logo">
-                </a>
-                <a href="https://www.instagram.com/estrella.webstarz/" target="blank">
-                    <img src="img/icono-ig.png" alt="instagram logo">
-                </a>
-            </p>
-            <p id="tag-txm">
-                <span><strong>W</strong>e<strong>b</strong> desi<strong>g</strong>n x <a
-                        href="https://www.instagram.com/txmmmmmmm/" target="blank">
-                        @t<strong>x</strong>m<strong>m</strong>mmmm<strong>m</strong></a></span>
-            </p>
-        </footer>
+        <!-- COREL -->
+        <div class="draggable" id="corel1">
+          <img
+            id="corel1-pic"
+            src="img/prendas/corel-145000-CO1.png"
+            title="corel   cod:CO1   $OLDOUT"
+            alt="corelCO1"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO1 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel2">
+          <img
+            id="corel2-pic"
+            src="img/prendas/corel-145000-CO2.png"
+            title="corel   cod:CO2   $0LD.0UT"
+            alt="corelCO2"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO2 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel3">
+          <img
+            id="corel3-pic"
+            src="img/prendas/corel-145000-CO3.png"
+            title="corel   cod:CO3   $OLDOUT"
+            alt="corelCO3"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO3 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel4">
+          <img
+            id="corel4-pic"
+            src="img/prendas/corel-60000-CO4.png"
+            title="corel   cod:CO4   $OLDOUT"
+            alt="corelCO4"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO4 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel5">
+          <img
+            id="corel5-pic"
+            src="img/prendas/corel-69000-CO5.png"
+            title="corel   cod:CO5   $0LD.0UT"
+            alt="corelCO5"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO5 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel8">
+          <img
+            id="corel8-pic"
+            src="img/prendas/corel-69000-CO8.png"
+            title="corel   cod:CO8   $69.000"
+            alt="corelCO8"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO6 $69.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel9">
+          <img
+            id="corel9-pic"
+            src="img/prendas/corel-69000-CO9.png"
+            title="corel   cod:CO9   $0LD.0UT"
+            alt="corelCO9"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO9 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel11">
+          <img
+            id="corel11-pic"
+            src="img/prendas/corel-145000-CO11.png"
+            title="corel   cod:CO11   $0LD.0UT"
+            alt="corelCO11"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO11 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel13no">
+          <img
+            id="corel13no-pic"
+            src="img/prendas/corel-115000-CO13.png"
+            title="corel   $0LD.0UT"
+            alt="corelSoldout"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio"> $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel13">
+          <img
+            id="corel13-pic"
+            src="img/prendas/tanda3/corel-95000-CO13.png"
+            title="corel   cod:CO13   $95.000"
+            alt="corelCO13"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO13 $95.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="corel18">
+          <img
+            id="corel18-pic"
+            src="img/prendas/corel-69000-CO18.png"
+            title="corel   cod:CO18   $0LD.0UT"
+            alt="corelCO18"
+          />
+          <div class="infoPrenda">
+            <span>corel</span>
+            <span class="precio">CO18 $0LD.0UT</span>
+          </div>
+        </div>
+
+        <!-- ELTONMIX -->
+        <div class="draggable" id="em5">
+          <img
+            id="em5-pic"
+            src="img/prendas/tanda3/elton-47000-EM5.png"
+            title="eltonmix   cod:EM5   $47000"
+            alt="eltonmixEM5"
+          />
+          <div class="infoPrenda">
+            <span>El Tonmix</span>
+            <span class="precio">EM5 $47000</span>
+          </div>
+        </div>
+        <div class="draggable" id="em7">
+          <img
+            id="em7-pic"
+            src="img/prendas/tanda3/elton-37000-EM7.png"
+            title="eltonmix   cod:EM7   $35000"
+            alt="eltonmixEM7"
+          />
+          <div class="infoPrenda">
+            <span>El Tonmix</span>
+            <span class="precio">EM7 $35000</span>
+          </div>
+        </div>
+        <div class="draggable" id="em12">
+          <img
+            id="em12-pic"
+            src="img/prendas/tanda3/elton-35000-EM12.png"
+            title="eltonmix   cod:EM12   $35000"
+            alt="eltonmixEM12"
+          />
+          <div class="infoPrenda">
+            <span>El Tonmix</span>
+            <span class="precio">EM12 $35000</span>
+          </div>
+        </div>
+        <div class="draggable" id="em16">
+          <img
+            id="em16-pic"
+            src="img/prendas/tanda3/elton-57000-EM16.png"
+            title="eltonmix   cod:EM16   $57000"
+            alt="eltonmixEM16"
+          />
+          <div class="infoPrenda">
+            <span>El Tonmix</span>
+            <span class="precio">EM16 $57000</span>
+          </div>
+        </div>
+        <div class="draggable" id="em17">
+          <img
+            id="em17-pic"
+            src="img/prendas/tanda3/elton-40000-EM17.png"
+            title="eltonmix   cod:EM17   $40000"
+            alt="eltonmixEM17"
+          />
+          <div class="infoPrenda">
+            <span>El Tonmix</span>
+            <span class="precio">EM17 $40000</span>
+          </div>
+        </div>
+
+        <!-- ESTOESUNTESORO -->
+        <div class="draggable" id="eet1">
+          <img
+            id="eet1-pic"
+            src="img/prendas/tanda3/ee-tesoro-85000-EET1.png"
+            title="esto es un tesoro   cod:EET1   $85000"
+            alt="esto es un tesoroEET1"
+          />
+          <div class="infoPrenda">
+            <span>Esto es un tesoro</span>
+            <span class="precio">EET1 $85000</span>
+          </div>
+        </div>
+        <div class="draggable" id="eet2">
+          <img
+            id="eet2-pic"
+            src="img/prendas/tanda3/ee-tesoro-85000-EET2.png"
+            title="esto es un tesoro   cod:EET2   $85000"
+            alt="esto es un tesoroEET2"
+          />
+          <div class="infoPrenda">
+            <span>Esto es un tesoro</span>
+            <span class="precio">EET2 $85000</span>
+          </div>
+        </div>
+        <div class="draggable" id="eet3">
+          <img
+            id="eet3-pic"
+            src="img/prendas/tanda3/ee-tesoro-45000-EET3.png"
+            title="esto es un tesoro   cod:EET3   $45000"
+            alt="esto es un tesoroEET3"
+          />
+          <div class="infoPrenda">
+            <span>Esto es un tesoro</span>
+            <span class="precio">EET3 $45000</span>
+          </div>
+        </div>
+        <div class="draggable" id="eet4">
+          <img
+            id="eet4-pic"
+            src="img/prendas/tanda3/ee-tesoro-55000-EET4.png"
+            title="esto es un tesoro   cod:EET4   $55000"
+            alt="esto es un tesoroEET4"
+          />
+          <div class="infoPrenda">
+            <span>Esto es un tesoro</span>
+            <span class="precio">EET4 $55000</span>
+          </div>
+        </div>
+        <div class="draggable" id="eet6">
+          <img
+            id="eet6-pic"
+            src="img/prendas/tanda3/ee-tesoro-45000-EET6.png"
+            title="esto es un tesoro   cod:EET6   $45000"
+            alt="esto es un tesoroEET6"
+          />
+          <div class="infoPrenda">
+            <span>Esto es un tesoro</span>
+            <span class="precio">EET6 $45000</span>
+          </div>
+        </div>
+
+        <!-- GIGI -->
+        <div class="draggable" id="gigi1">
+          <img
+            id="gigi1-pic"
+            src="img/prendas/tanda3/gigi-105000-GI1.png"
+            title="gigi   cod:GI1   $105000"
+            alt="gigiGI1"
+          />
+          <div class="infoPrenda">
+            <span>Gigi</span>
+            <span class="precio">GI1 $105000</span>
+          </div>
+        </div>
+        <div class="draggable" id="gigi3">
+          <img
+            id="gigi3-pic"
+            src="img/prendas/tanda3/gigi-56000-GI3.png"
+            title="gigi   cod:GI3   $56000"
+            alt="gigiGI3"
+          />
+          <div class="infoPrenda">
+            <span>Gigi</span>
+            <span class="precio">GI3 $56000</span>
+          </div>
+        </div>
+
+        <!-- ISSAARCHIVOS -->
+        <div class="draggable" id="iss1">
+          <img
+            id="iss1-pic"
+            src="img/prendas/issaarchivos-50000-ISS1.png"
+            title="issaarchivos   cod:ISS1   $OLDOUT"
+            alt="issaarchivosISA1"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS1 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss2">
+          <img
+            id="iss2-pic"
+            src="img/prendas/issaarchivos-30000-ISS2.png"
+            title="issaarchivos   cod:ISS2   $OLDOUT"
+            alt="issaarchivosISA2"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS2 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss3">
+          <img
+            id="iss3-pic"
+            src="img/prendas/issaarchivos-50000-ISS3.png"
+            title="issaarchivos   cod:ISS3   $OLDOUT"
+            alt="issaarchivosISA3"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS3 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss4">
+          <img
+            id="iss4-pic"
+            src="img/prendas/issaarchivos-60000-ISS4.png"
+            title="issaarchivos   cod:ISS4   $0LD.0UT"
+            alt="issaarchivosISA4"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS4 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss5">
+          <img
+            id="iss5-pic"
+            src="img/prendas/issaarchivos-40000-ISS5.png"
+            title="issaarchivos   cod:ISS5   $0LD.0UT"
+            alt="issaarchivosISA5"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS5 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss6">
+          <img
+            id="iss6-pic"
+            src="img/prendas/issaarchivos-45000-ISS6.png"
+            title="issaarchivos   cod:ISS6   $OLDOUT"
+            alt="issaarchivosISA6"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS6 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss7">
+          <img
+            id="iss7-pic"
+            src="img/prendas/issaarchivos-35000-ISS7.png"
+            title="issaarchivos   cod:ISS7   $0LD.0UT"
+            alt="issaarchivosISA7"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS7 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss13">
+          <img
+            id="iss13-pic"
+            src="img/prendas/issaarchivos-40000-ISS13.png"
+            title="issaarchivos   cod:ISS13   $40.000"
+            alt="issaarchivosISA13"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS13 $40.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss14">
+          <img
+            id="iss14-pic"
+            src="img/prendas/issaarchivos-35000-ISS14.png"
+            title="issaarchivos   cod:ISS14   $35.000"
+            alt="issaarchivosISA14"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS14 $35.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss17">
+          <img
+            id="iss17-pic"
+            src="img/prendas/issaarchivos-35000-ISS17.png"
+            title="issaarchivos   cod:ISS17   $35.000"
+            alt="issaarchivosISA17"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS17 $35.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss20">
+          <img
+            id="iss20-pic"
+            src="img/prendas/issaarchivos-50000-ISS20.png"
+            title="issaarchivos   cod:ISS20   $50.000"
+            alt="issaarchivosISA20"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS20 $50.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss22">
+          <img
+            id="iss22-pic"
+            src="img/prendas/issaarchivos-40000-ISS22.png"
+            title="issaarchivos   cod:ISS22   $40.000"
+            alt="issaarchivosISA22"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS22 $40.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss25">
+          <img
+            id="iss25-pic"
+            src="img/prendas/issaarchivos-50000-ISS25.png"
+            title="issaarchivos   cod:ISS25   $50.000"
+            alt="issaarchivosISA25"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS25 $50.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="iss26">
+          <img
+            id="iss26-pic"
+            src="img/prendas/issaarchivos-50000-ISS26.png"
+            title="issaarchivos   cod:ISS26   $0LD.0UT"
+            alt="issaarchivosISA26"
+          />
+          <div class="infoPrenda">
+            <span>issaarchivos</span>
+            <span class="precio">ISS26 $0LD.0UT</span>
+          </div>
+        </div>
+
+        <!-- JUISHII -->
+        <div class="draggable" id="ju1">
+          <img
+            id="ju1-pic"
+            src="img/prendas/JUISHII-82000-JU1.png"
+            title="juishi   cod:JU1   $OLDOUT"
+            alt="juishiJU1"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU1 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju2">
+          <img
+            id="ju2-pic"
+            src="img/prendas/JUISHII-50000-JU2.png"
+            title="juishi   cod:JU2   $OLDOUT"
+            alt="juishiJU2"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU2 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju3">
+          <img
+            id="ju3-pic"
+            src="img/prendas/JUISHII-50000-JU3.png"
+            title="juishi   cod:JU3   $50.000"
+            alt="juishiJU3"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU3 $50.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju4">
+          <img
+            id="ju4-pic"
+            src="img/prendas/JUISHII-50000-JU4.png"
+            title="juishi   cod:JU4   $50.000"
+            alt="juishiJU4"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU4 $50.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju5">
+          <img
+            id="ju5-pic"
+            src="img/prendas/JUISHII-48000-JU5.png"
+            title="juishi   cod:JU5   $OLDOUT"
+            alt="juishiJU5"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU5 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju16">
+          <img
+            id="ju16-pic"
+            src="img/prendas/JUISHII-50000-JU16.png"
+            title="juishi   cod:JU16   $50.000"
+            alt="juishiJU16"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU16 $50.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju20">
+          <img
+            id="ju20-pic"
+            src="img/prendas/JUISHII-50000-JU20.png"
+            title="juishi   cod:JU20   $0LD.0UT"
+            alt="juishiJU20"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU20 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju21">
+          <img
+            id="ju21-pic"
+            src="img/prendas/JUISHII-50000-JU21.png"
+            title="juishi   cod:JU21   $0LD.0UT"
+            alt="juishiJU21"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU21 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju22">
+          <img
+            id="ju22-pic"
+            src="img/prendas/JUISHII-55000-JU22.png"
+            title="juishi   cod:JU22   $55.000"
+            alt="juishiJU22"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU22 $55.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju24">
+          <img
+            id="ju24-pic"
+            src="img/prendas/JUISHII-70000-JU24.png"
+            title="juishi   cod:JU24   $0LD.0UT"
+            alt="juishiJU24"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU24 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju34">
+          <img
+            id="ju34-pic"
+            src="img/prendas/tanda3/JUISHII-35000-JU34.png"
+            title="juishi   cod:JU34   $35.000"
+            alt="juishiJU34"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU34 $35.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju37">
+          <img
+            id="ju37-pic"
+            src="img/prendas/tanda3/JUISHII-40000-JU37.png"
+            title="juishi   cod:JU37   $40.000"
+            alt="juishiJU37"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU37 $40.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="ju38">
+          <img
+            id="ju38-pic"
+            src="img/prendas/tanda3/JUISHII-40000-JU38.png"
+            title="juishi   cod:JU38   $40.000"
+            alt="juishiJU38"
+          />
+          <div class="infoPrenda">
+            <span>ju ishi i</span>
+            <span class="precio">JU38 $40.000</span>
+          </div>
+        </div>
+
+        <!-- LAME BEAUTY ITEM -->
+        <div class="draggable" id="lbi1">
+          <img
+            id="lbi1-pic"
+            src="img/prendas/lame-beauty-item-35000-LBI1.png"
+            title="lame_beauty_item   cod:LBI1   $35.000"
+            alt="lameBeautyLBI1"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI1 $35.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi2">
+          <img
+            id="lbi2-pic"
+            src="img/prendas/lame-beauty-item-45000-LBI2.png"
+            title="lame_beauty_item   cod:LBI2   $OLDOUT"
+            alt="lameBeautyLBI2"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI2 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi3">
+          <img
+            id="lbi3-pic"
+            src="img/prendas/lame-beauty-item-35000-LBI3.png"
+            title="lame_beauty_item   cod:LBI3   $0LD.0UT"
+            alt="lameBeautyLBI3"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI3 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi4">
+          <img
+            id="lbi4-pic"
+            src="img/prendas/lame-beauty-item-35000-LBI4.png"
+            title="lame_beauty_item   cod:LBI4   $35.000"
+            alt="lameBeautyLBI4"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI4 $35.000.-</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi5">
+          <img
+            id="lbi5-pic"
+            src="img/prendas/lame-beauty-item-35000-LBI5.png"
+            title="lame_beauty_item   cod:LBI5   $35.000"
+            alt="lameBeautyLBI5"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI5 $35.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi6">
+          <img
+            id="lbi6-pic"
+            src="img/prendas/lame-beauty-item-35000-LBI6.png"
+            title="lame_beauty_item   cod:LBI6   $0LD.0UT"
+            alt="lameBeautyLBI6"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI6 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi7">
+          <img
+            id="lbi7-pic"
+            src="img/prendas/lame-beauty-item-35000-LBI7.png"
+            title="lame_beauty_item   cod:LBI7   $35.000"
+            alt="lameBeautyLBI7"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI7 $35.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi8">
+          <img
+            id="lbi8-pic"
+            src="img/prendas/lame-beauty-item-35000-LBI8.png"
+            title="lame_beauty_item   cod:LBI8   $35.000"
+            alt="lameBeautyLBI8"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI8 $35.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi10">
+          <img
+            id="lbi10-pic"
+            src="img/prendas/tanda3/lame_beauty-item-40000-LBI10.png"
+            title="lame_beauty_item   cod:LBI10   $40.000"
+            alt="lameBeautyLBI10"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI10 $40.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="lbi11">
+          <img
+            id="lbi11-pic"
+            src="img/prendas/tanda3/lame_beauty-item-35000-LBI11.png"
+            title="lame_beauty_item   cod:LBI11   $35.000"
+            alt="lameBeautyLBI11"
+          />
+          <div class="infoPrenda">
+            <span>lame_beauty_item</span>
+            <span class="precio">LBI11 $35.000</span>
+          </div>
+        </div>
+
+        <!-- MUSHHIIII -->
+        <div class="draggable" id="mu1">
+          <img
+            id="mu1-pic"
+            src="img/prendas/mushhhiii-40000-MU1.png"
+            title="mushhiiii   cod:MU1   $40.000"
+            alt="mushhiiiiMU1"
+          />
+          <div class="infoPrenda">
+            <span>mushhiiii</span>
+            <span class="precio">MU1 $40.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="mu2">
+          <img
+            id="mu2-pic"
+            src="img/prendas/mushhhiii-40000-MU2.png"
+            title="mushhiiii   cod:MU2   $OLDOUT"
+            alt="mushhiiiiMU2"
+          />
+          <div class="infoPrenda">
+            <span>mushhiiii</span>
+            <span class="precio">MU2 $OLDOUT</span>
+          </div>
+        </div>
+        <div class="draggable" id="mu3">
+          <img
+            id="mu3-pic"
+            src="img/prendas/mushhhiii-40000-MU3.png"
+            title="mushhiiii   cod:MU3   $0LD.0UT"
+            alt="mushhiiiiMU3"
+          />
+          <div class="infoPrenda">
+            <span>mushhiiii</span>
+            <span class="precio">MU3 $0LD.0UT</span>
+          </div>
+        </div>
+        <div class="draggable" id="mu4">
+          <img
+            id="mu4-pic"
+            src="img/prendas/mushhhiii-A-PEDIDO-MU4.png"
+            title="mushhiiii   cod:MU4   $40.000"
+            alt="mushhiiiiMU4"
+          />
+          <div class="infoPrenda">
+            <span>mushhiiii</span>
+            <span class="precio">MU4 A PEDIDO</span>
+          </div>
+        </div>
+        <div class="draggable" id="mu5">
+          <img
+            id="mu5-pic"
+            src="img/prendas/mushhhiiii-A-PEDIDO-MU5.png"
+            title="mushhiiii   cod:MU5   A PEDIDO"
+            alt="mushhiiiiMU5"
+          />
+          <div class="infoPrenda">
+            <span>mushhiiii</span>
+            <span class="precio">MU5 A PEDIDO</span>
+          </div>
+        </div>
+
+        <!-- ODOR -->
+        <div class="draggable" id="od1">
+          <img
+            id="od1-pic"
+            src="img/prendas/odor-20000-OD1.png"
+            title="odor   cod:OD1   $20.000"
+            alt="odorOD1"
+          />
+          <div class="infoPrenda">
+            <span>odor</span>
+            <span class="precio">OD1 $20.000</span>
+          </div>
+        </div>
+
+        <!-- NIKIRI -->
+        <div class="draggable" id="nik2">
+          <img
+            id="nik2-pic"
+            src="img/prendas/tanda3/nikiri-10000-NIK2.png"
+            title="nikiri   cod:NIK2   $10.000"
+            alt="nikiriNIK2"
+          />
+          <div class="infoPrenda">
+            <span>nikiri</span>
+            <span class="precio">NIK2 $10.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="nik7">
+          <img
+            id="nik7-pic"
+            src="img/prendas/tanda3/nikiri-10000-NIK7.jpg"
+            title="nikiri   cod:NIK7   $10.000"
+            alt="nikiriNIK7"
+          />
+          <div class="infoPrenda">
+            <span>nikiri</span>
+            <span class="precio">NIK7 $10.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="nik8">
+          <img
+            id="nik8-pic"
+            src="img/prendas/tanda3/nikiri-10000-NIK8.png"
+            title="nikiri   cod:NIK8   $10.000"
+            alt="nikiriNIK8"
+          />
+          <div class="infoPrenda">
+            <span>nikiri</span>
+            <span class="precio">NIK8 $10.000</span>
+          </div>
+        </div>
+
+        <!-- NIPPER -->
+        <div class="draggable" id="nip2">
+          <img
+            id="nip2-pic"
+            src="img/prendas/tanda3/nipper-75000-NIP2.png"
+            title="nipper   cod:NIP2   PAR:$75.000"
+            alt="nipperNIP2"
+          />
+          <div class="infoPrenda">
+            <span>nipper</span>
+            <span class="precio">NIP2 PAR:$75.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="nip2b">
+          <img
+            id="nip2b-pic"
+            src="img/prendas/tanda3/nipper-75000-NIP2b.png"
+            title="nipper   cod:NIP2   PAR:$75.000"
+            alt="nipperNIP2b"
+          />
+          <div class="infoPrenda">
+            <span>nipper</span>
+            <span class="precio">NIP2 PAR:$75.000</span>
+          </div>
+        </div>
+        <div class="draggable" id="nip10">
+          <img
+            id="nip10-pic"
+            src="img/prendas/tanda3/nipper-85000-NIP10.png"
+            title="nipper   cod:NIP10   $85.000"
+            alt="nipperNIP10"
+          />
+          <div class="infoPrenda">
+            <span>nipper</span>
+            <span class="precio">NIP10 $85.000</span>
+          </div>
+        </div>
+      </div>
+
+      <!--infoStarz-->
+      <section id="infoWebstarz">
+        <h1>estrella.webstarz</h1>
+        <p>is a sidereal community of artists</p>
+        <p>
+          you can find our products at
+          <em>Lab Odor</em>
+        </p>
+        <p>
+          <strong
+            ><a
+              href="https://www.google.com/maps?q=Vera+1350,+Ciudad+de+Buenos+Aires"
+              target="_blank"
+            >
+              <i class="fas fa-map-pin"></i>Vera 1350, Ciudad de Buenos Aires</a
+            ></strong
+          >
+        </p>
+        <p>for orders anywhere in the world</p>
+        <p>
+          contact us at
+          <a
+            id="contact-info"
+            class="lightbox"
+            href="javascript:location='mailto:\u0065\u0073\u0074\u0072\u0065\u006c\u006c\u0061\u0077\u0065\u0062\u0073\u0074\u0061\u0072\u007a\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
+          >
+            <script type="text/javascript">
+              document.write(
+                "\u0065\u0073\u0074\u0072\u0065\u006c\u006c\u0061\u0077\u0065\u0062\u0073\u0074\u0061\u0072\u007a\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d"
+              );
+            </script>
+          </a>
+        </p>
+        <!--  flecha para volver atras-->
+        <button class="arrow-button">
+          <img id="flecha-atras" src="img/icono-flecha.png" alt="volver" />
+        </button>
+      </section>
+      <!-- Footer txm -->
+      <footer class="footer">
+        <p>
+          <a
+            href="javascript:location='mailto:\u0068\u006f\u006c\u0061\u0040\u0065\u0073\u0074\u0072\u0065\u006c\u006c\u0061\u002d\u0077\u0065\u0062\u0073\u0074\u0061\u0072\u007a\u002e\u0063\u006f\u006d';void 0"
+          >
+            <img src="img/icono-mail.png" alt="email logo" />
+          </a>
+          <a href="https://www.instagram.com/estrella.webstarz/" target="blank">
+            <img src="img/icono-ig.png" alt="instagram logo" />
+          </a>
+        </p>
+        <p id="tag-txm">
+          <span
+            ><strong>W</strong>e<strong>b</strong> desi<strong>g</strong>n x
+            <a href="https://www.instagram.com/txmmmmmmm/" target="blank">
+              @t<strong>x</strong>m<strong>m</strong>mmmm<strong>m</strong></a
+            ></span
+          >
+        </p>
+      </footer>
     </main>
     <script src="js/script.js" defer></script>
-</body>
-
+  </body>
 </html>
