@@ -889,8 +889,8 @@ img {
 }
 
 #ju5 {
-  top: 835vh;
-  left: 60vw;
+  top: 815vh;
+  left: 56vw;
   width: 15vw;
 }
 
@@ -901,9 +901,15 @@ img {
 }
 
 #corel3 {
-  top: 865vh;
+  top: 850vh;
   left: 45vw;
   width: 15vw;
+}
+
+#lbi2 {
+  top: 840vh;
+  left: 60vw;
+  width: 12vw;
 }
 
 #corel5 {
@@ -913,8 +919,8 @@ img {
 }
 
 #iss6 {
-  top: 895vh;
-  left: 62vw;
+  top: 885vh;
+  left: 52vw;
   width: 10vw;
 }
 
@@ -925,7 +931,7 @@ img {
 }
 
 #ju2 {
-  top: 912vh;
+  top: 907vh;
   left: 45vw;
   width: 15vw;
 }
@@ -948,24 +954,39 @@ img {
 }
 
 #ctc4 {
-    top: 960vh;
+    top: 952vh;
     left: 58vw;
 }
 
 #mu2 {
-    top: 975vh;
+    top: 960vh;
     left: 30vw;
     width: 12vw;
 }
 
 #iss7 {
+    top: 970vh;
+    left: 45vw;
+    width: 10vw;
+}
+
+#ctc6 {
+    top: 980vh;
+    left: 58vw;
+    width: 12vw;
+}
+
+#corel2 {
+    top: 980vh;
+    left: 27vw;
+    width: 12vw;
+}
+
+#ju1 {
     top: 990vh;
     left: 45vw;
     width: 12vw;
 }
-
-
-/* TERCER TANDA */
 
 
 
